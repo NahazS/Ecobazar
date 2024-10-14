@@ -31,5 +31,5 @@ p{
     @apply border-solid border-[1px] border-[#E6E6E6] hover:border-[#2C742F] rounded-md mb-[24px] text-center w-fit;
 }
 .pop_product_box{
-    @apply border-[1px] border-[#E6E6E6] hover:border-[#2C742F] max-w-[264px] mx-auto sm:mx-0 bg-white;
+    @apply border-[1px] border-[#E6E6E6] hover:border-[#2C742F] max-w-[264px] mx-auto sm:mx-0 bg-white ;
 }
