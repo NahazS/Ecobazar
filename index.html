@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazer</title>
+    <link rel="stylesheet" href="src/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="font-Poppins">
+    <header>
+        <!------------------------ nav section  ---------------------------->
+        <nav class="mt-4 px-0 xl:px-16 mb-3">
+            <!------------------------ nav part1(address)  ---------------------------->
+            <div class="flex justify-between px-0 md:px-[50px] lg:px-[70px] xl:px-[120px] mb-3">
+                <div class="flex flex-row mx-auto md:mx-0">
+                    <img src="./img/Map Pin.svg" alt="">
+                    <p><span class="text-xs">Store Location: Lincoln- 344, Illinois, Chicago, USA</span></p>
+                </div>
+                <div class="hidden md:flex">
+                    <p><span class="text-xs mr-5">Eng</span></p>
+                    <p><span class="text-xs mr-5">USD</span></p>
+                    <p><span class="text-xs mr-5">Sign In / Sign Up</span></p>
+                </div>
+            </div>
+            <hr>
+            <!------------------------ nav part2(logo,search) ---------------------------->
+            <div class="flex justify-around sm:justify-between my-[24px]  px-3 md:px-[50px] lg:px-[70px] xl:px-[120px]">
+                <img class="mr-[10px] md:mr-[30px] lg:mr-[70px] xl:mr-[120px]" src="./img/Logo.png" alt="">
+                <div class="hidden sm:flex flex-1 items-center border-solid border-[1px] border-gray-300 rounded-md overflow-hidden">
+                    <input class="flex-1 px-2 py-2 text-gray-700 focus:outline-none" placeholder="Search"" type="text" name="" id="" required>
+                    <button class="bg-[#00B207] text-white px-4 py-2 font-semibold rounded-none hover:bg-opacity-50">Search</button>
+                </div>
+                <div class="flex items-center ml-3 md:ml-[30px] lg:ml-[70px] xl:ml-[120px]">
+                    <img class="h-[18px] md:h-[32px]" src="./img/Heart.svg" alt="">
+                    <div class="flex items-center">
+                        <img class="h-[18px] md:h-[32px]" src="./img/Bag.svg" alt="">
+                        <div>
+                            <p><span class="text-[11px]"><span class="hidden sm:inline">Shopping </span>cart:</span></p>
+                            <p>$00.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------ nav part3(home,shop etc.)  ---------------------------->
+            <div class="flex bg-[#333] justify-between py-4 px-0 md:px-[50px] lg:px-[70px] xl:px-[120px]">
+                <ul class="flex mx-auto md:mx-0">
+                    <li class="mr-4 md:mr-8 text-[#999]"><a href="">Home</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999]"><a href="">Shop</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999]"><a href="">Pages</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999]"><a href="">Blog</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999] hidden sm:flex"><a href="">About Us</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999] hidden sm:flex"><a href="">Contact Us</a></li>
+                </ul>
+                <div class="hidden md:flex items-center">
+                    <img src="./img/PhoneCall 1.svg" alt="">
+                    <p class="text-white">(219) 555-0114</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="">
+        
+        <!------------------------ banner section  ---------------------------->
+        <section class="max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-[repeat(4,300px)] md:grid-rows-[repeat(3,300px)] lg:grid-rows-[repeat(2,300px)] p-2 md:p-5 lg:p-10 xl:p-15">
+            
+            <!------------------------ banner_1  ---------------------------->
+            <div class="md:col-span-2 row-span-2 bg-[url('../img/Bannar_Big.png')] bg-cover bg-right bg-no-repeat rounded-xl text-white">
+                <div class="h-full flex flex-col justify-center pl-[20px]">
+                    <h1 class="font-semibold leading-tight mb-4 md:mb-6 lg:mb-8">Fresh & Healthy<br>Organic Food</h1>
+                    <div class="flex mb-4 md:mb-6 lg:mb-8">
+                        <hr class="mr-[12px] w-[2px] h-[65px] bg-[#84D187]">
+                        <div class="mb-[28px]">
+                            <div class="flex items-center">
+                                <h4 class="">Sale up to</h4>
+                                <h4 class="px-3 bg-[#FF8A00] items-cent max-w-fit rounded-md ml-2">30% OFF</h4>
+                            </div>
+                            <p>Free shipping on all your order.</p>
+                        </div>    
+                    </div>
+                    <button class="btn-primary">Shop now</button>
+                </div>        
+            </div>
+
+            <!------------------------ banner_2  ---------------------------->
+            <div class="row-span-1 bg-[url('../img/Bannar.png')] bg-cover bg-right bg-no-repeat rounded-xl text-black">
+                <div class="h-full flex flex-col justify-center pl-[20px]">
+                    <p>Summer Sale</p>
+                    <h3 class="mb-2 md:mb-3 lg:mb-4">75% OFF</h3>
+                    <p class="mb-2 md:mb-3 lg:mb-4">Only Fruit & Vegetable</p>
+                    <button class="btn-primary">Shop now</button>
+                </div>        
+            </div>
+            <!------------------------ banner_3  ---------------------------->
+            <div class="row-span-1 bg-[url('../img/Bannar_1.png')] bg-cover bg-right bg-no-repeat rounded-xl text-black">
+                <div class="h-full text-center flex flex-col place-content-center text-white">
+                    <p>Best Deal</p>
+                    <h3 class="mb-2 md:mb-3 lg:mb-4">Special Products <br> Deal of the Month</h3>
+                    <button class="btn-primary mx-auto">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------ service section  ---------------------------->
+        <section class="max-w-[1320px] mx-auto rounded-lg shadow-xl hover:shadow-2xl mb-5 mt-[24px] md:mt-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:p-[20px] xl:p-[40px] ">
+                <div class="flex mb-[20px] justify-center">
+                    <img src="./img/delivery-truck 1.svg" alt="">
+                    <div>
+                        <h6>Free Shipping</h6>
+                        <p>Free shipping on all your order</p>
+                    </div>
+                </div>
+                <div class="flex mb-[20px] justify-center">
+                    <img src="./img/headphones 1.svg" alt="">
+                    <div>
+                        <h6>Customer Support 24/7</h6>
+                        <p>Instant access to Support</p>
+                    </div>
+                </div>
+                <div class="flex mb-[20px] justify-center">
+                    <img src="./img/shopping-bag.svg" alt="">
+                    <div>
+                        <h6>100% Secure Payment</h6>
+                        <p>We ensure your money is save</p>
+                    </div>
+                </div>
+                <div class="flex mb-[20px] justify-center">
+                    <img src="./img/package.svg" alt="">
+                    <div>
+                        <h6>Money-Back Guarantee</h6>
+                        <p>30 Days Money-Back Guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------ Popular Categories  ---------------------------->
+        <section class="max-w-[1320px] mx-auto mt-[60px]">
+            <div class="flex justify-between px-[20px] mb-[32px]">
+                <h3 class="mx-auto md:mx-0">Popular Categories</h3>
+                <button class="hidden md:flex text-[#00B207]">View All</button>
+            </div>
+            <div class="flex flex-wrap gap-3 md:gap-[24px] justify-center">
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image.png" alt="">
+                    <h5>Fresh Fruit</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_1.png" alt="">
+                    <h5>Fresh Vegetables</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_2.png" alt="">
+                    <h5>Meat & Fish</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_3.png" alt="">
+                    <h5>Snacks</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_4.png" alt="">
+                    <h5>Beverages</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_5.png" alt="">
+                    <h5>Beauty & Health</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_6.png" alt="">
+                    <h5>Bread & Bakery</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_7.png" alt="">
+                    <h5>Baking Needs</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_8.png" alt="">
+                    <h5>Cooking</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_9.png" alt="">
+                    <h5>Diabetic Food</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_10.png" alt="">
+                    <h5>Dish Detergents</h5>
+                </div>
+                <div class="popular_box">
+                    <img class="my-[16px]" src="./img/popular/image_11.png" alt="">
+                    <h5>Oil</h5>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!------------------------ Popular Products  ---------------------------->
+        <section class="max-w-[1320px] mx-auto mb-[60px]">
+            <div class="flex justify-between px-[20px] mb-[32px]">
+                <h3 class="mx-auto md:mx-0">Popular Products</h3>
+                <button class="hidden md:flex text-[#00B207]">View All</button>
+            </div>
+            <div class="flex flex-wrap justify-center">
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_1.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Apple</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_2.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Fresh Indian Malta</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box m-0">
+                    <img class="p-[5px]" src="./img/product/product_3.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Chinese cabbage</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box m-0">
+                    <img class="p-[5px]" src="./img/product/product_4.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Lettuce</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box m-0">
+                    <img class="p-[5px]" src="./img/product/product_5.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Eggplant</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box m-0">
+                    <img class="p-[5px]" src="./img/product/product_6.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Big Potatoes</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_7.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Corn</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_8.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Fresh Cauliflower</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_9.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Capsicum</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_10.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Chili</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <!------------------------ seal section  ---------------------------->
+        <section class="max-w-[1320px] mx-auto grid gap-[24px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-[repeat(3,536px)] md:grid-rows-[repeat(2,536px)] lg:grid-rows-[repeat(1,536px)] p-2 md:p-5 lg:p-10 xl:p-15">
+            <div class="bg-[url('../img/seal_1.png')] bg-cover bg-right bg-no-repeat max-h-[536px] rounded-xl text-white text-center pt-[50px]">
+                <p>Best Deals</p>
+                <h2 class="font-semibold">Sale of the Month</h2>
+                <h5>Up To <span class="py-[6px] px-[12px] bg-black rounded-[5px] text-white">64% OFF</span></h5>
+                <button class="btn-primary mt-[30px]">Shop Now</button>
+            </div>
+            <div class="bg-[url('../img/seal_2.png')] bg-cover bg-right bg-no-repeat max-h-[536px] rounded-xl text-white font-semibold text-center pt-[50px]">
+                <p>85% Fat Free</p>
+                <h2 class="font-semibold">Low-Fat Meat</h2>
+                <h5>Started at <span class="text-[20px] text-[#FF8A00]">$79.99</span></h5>
+                <button class="btn-primary mt-[30px]">Shop Now</button>
+            </div>
+            <div class="bg-[url('../img/seal_3.png')] bg-cover bg-right bg-no-repeat max-h-[536px] rounded-xl font-semibold text-center pt-[50px]">
+                <p>Best Deals</p>
+                <h2 class="font-semibold">Sale of the Month</h2>
+                <h5>Up To <span class="py-[6px] px-[12px] bg-black rounded-[5px] text-white">64% OFF</span></h5>
+                <button class="btn-primary mt-[30px]">Shop Now</button>
+            </div>
+        </section>
+
+        <!------------------------ Hot Deals  ---------------------------->
+        <section class="mb-[60px] p-2 md:p-5 lg:p-10 xl:p-15 bg-[#F7F7F7]">
+            <div class="max-w-[1320px] mx-auto">
+                <div class="flex justify-between px-[20px] mb-[32px]">
+                    <h3 class="mx-auto md:mx-0">Hot Deals</h3>
+                    <button class="hidden md:flex text-[#00B207]">View All</button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-rows-[repeat(12,330px)] sm:grid-rows-[repeat(6,330px)] md:grid-rows-[repeat(4,330px)] lg:grid-rows-[repeat(3,330px)] justify-center">
+                    <div class="col-span-1 row-span-2 sm:col-span-2 sm:row-span-2 place-content-center border-[1px] border-[#E6E6E6] hover:border-[#2C742F] mx-auto sm:mx-0 bg-white">
+                        <img class="p-[5px]" src="./img/hot_deals_big_poster.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Green Apple</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box">
+                        <img class="p-[5px]" src="./img/product/product_2.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Fresh Indian Malta</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box m-0">
+                        <img class="p-[5px]" src="./img/product/product_3.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Chinese cabbage</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box m-0">
+                        <img class="p-[5px]" src="./img/product/product_4.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Green Lettuce</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box m-0">
+                        <img class="p-[5px]" src="./img/product/product_5.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Eggplant</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box m-0">
+                        <img class="p-[5px]" src="./img/product/product_6.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Big Potatoes</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box">
+                        <img class="p-[5px]" src="./img/product/product_7.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Corn</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box">
+                        <img class="p-[5px]" src="./img/product/product_8.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Fresh Cauliflower</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box">
+                        <img class="p-[5px]" src="./img/product/product_9.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Green Capsicum</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box">
+                        <img class="p-[5px]" src="./img/product/product_2.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Green Chili</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box">
+                        <img class="p-[5px]" src="./img/product/product_4.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Green Chili</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="pop_product_box">
+                        <img class="p-[5px]" src="./img/product/product_6.png" alt="">
+                        <div class="p-[12px]">
+                            <p>Green Chili</p>
+                            <div class="flex justify-between items-center">
+                                <h6>$12.00</h6>
+                                <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                            </div>
+                            <div class="flex">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star_full.svg" alt="">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <!------------------------ summer seal  ---------------------------->
+        <section class="flex justify-center px-[10px] sm:px-0">
+            <div class="w-[1320px] mx-auto bg-[url('../img/summer.png')] bg-cover bg-left bg-no-repeat rounded-xl h-[358px] m-2 md:m-5 lg:m-10 xl:m-15">
+                <div class="text-white h-full flex flex-col justify-center ml-[20%] sm:ml-[25%] md:ml-[45%] lg:ml-[55%] xl:ml-[60%]">
+                    <h6>Summer Sale</h6>
+                    <h1><span class="text-[56px] text-[#FF8A00]">37%</span><span class="text-[56px]">OFF</span></h1>
+                    <h6>Free on all your order, Free Shipping and  30 days <br> money-back guarantee</h6>
+                    <button class="btn-primary bg-[#00B207] mt-[28px]">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------ summer seal  ---------------------------->
+        <section class="max-w-[1320px] mx-auto mb-[60px]">
+            <div class="flex justify-between px-[20px] mb-[32px]">
+                <h3 class="mx-auto md:mx-0 font-semibold">Featured Products</h3>
+                <button class="hidden md:flex text-[#00B207]">View All</button>
+            </div>
+            <div class="flex flex-wrap justify-center">
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_1.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Apple</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_2.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Apple</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_3.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Apple</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_4.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Apple</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="pop_product_box">
+                    <img class="p-[5px]" src="./img/product/product_5.png" alt="">
+                    <div class="p-[12px]">
+                        <p>Green Apple</p>
+                        <div class="flex justify-between items-center">
+                            <h6>$12.00</h6>
+                            <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star_full.svg" alt="">
+                            <img src="img/Star.svg" alt="">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <!------------------------ news  ---------------------------->
+        <section class="max-w-[1320px] mx-auto">
+            <h3 class="flex flex-col m-0 text-center xl:text-left xl:m-[40px]">Latest News</h3>
+            <div class="w-full flex flex-wrap gap-x-6 m-2 md:m-5 lg:m-10 xl:m-15 justify-around xl:justify-normal px-[10px] sm:px-0">
+                <div class="shadow-xl w-fit  mb-[24px] xl:mb-0">
+                    <img src="./img/Latest News.png" alt="">
+                    <div class="p-[24px]">
+                        <div class="inline sm:flex">
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M17.1583 11.6748L11.1833 17.6498C11.0285 17.8048 10.8447 17.9277 10.6424 18.0116C10.4401 18.0955 10.2232 18.1386 10.0042 18.1386C9.78513 18.1386 9.56825 18.0955 9.36592 18.0116C9.16359 17.9277 8.97978 17.8048 8.82499 17.6498L1.66666 10.4998V2.1665H9.99999L17.1583 9.32484C17.4687 9.63711 17.643 10.0595 17.643 10.4998C17.643 10.9401 17.4687 11.3626 17.1583 11.6748V11.6748Z" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.83331 6.33301H5.84165" stroke="#B3B3B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg></span>Food</p>
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M9.9999 9.66667C11.8408 9.66667 13.3332 8.17428 13.3332 6.33333C13.3332 4.49238 11.8408 3 9.9999 3C8.15895 3 6.66656 4.49238 6.66656 6.33333C6.66656 8.17428 8.15895 9.66667 9.9999 9.66667Z" stroke="#B3B3B3" stroke-width="1.2"/>
+                                <path d="M12.4999 12.1665H7.49995C5.19828 12.1665 3.13745 14.2915 4.65161 16.024C5.68161 17.2023 7.38495 17.9998 9.99995 17.9998C12.6149 17.9998 14.3174 17.2023 15.3474 16.024C16.8624 14.2907 14.8008 12.1665 12.4999 12.1665Z" stroke="#B3B3B3" stroke-width="1.2"/>
+                              </svg></span>By Admin</p>
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <path d="M10.5238 14.2728L9.48206 16.0087C9.43209 16.092 9.36139 16.1609 9.27687 16.2088C9.19234 16.2566 9.09686 16.2818 8.99972 16.2818C8.90258 16.2818 8.8071 16.2566 8.72257 16.2088C8.63804 16.1609 8.56735 16.092 8.51738 16.0087L7.47675 14.2728C7.42671 14.1895 7.35596 14.1206 7.27138 14.0728C7.1868 14.025 7.09128 13.9999 6.99413 14H2.8125C2.66332 14 2.52024 13.9407 2.41475 13.8352C2.30926 13.7298 2.25 13.5867 2.25 13.4375V4.4375C2.25 4.28832 2.30926 4.14524 2.41475 4.03975C2.52024 3.93426 2.66332 3.875 2.8125 3.875H15.1875C15.3367 3.875 15.4798 3.93426 15.5852 4.03975C15.6907 4.14524 15.75 4.28832 15.75 4.4375V13.4375C15.75 13.5867 15.6907 13.7298 15.5852 13.8352C15.4798 13.9407 15.3367 14 15.1875 14H11.0059C10.9088 14 10.8134 14.0252 10.7289 14.073C10.6445 14.1208 10.5738 14.1896 10.5238 14.2728V14.2728Z" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg></span>65 Comments</p>
+                        </div>
+                        <h5 class="text-[#2C742F] mt-[8px]">Curabitur porttitor orci eget neque <br> accumsan venenatis. Nunc fermentum.</h5>
+                        <button class="flex  items-center text-[#00B207] mt-[20px]">Read More <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                            <path d="M16 7.50049H1" stroke="#00B307" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.95001 1.47559L16 7.49959L9.95001 13.5246" stroke="#00B307" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></span></button>
+                    </div>
+                </div>
+                <div class="shadow-xl w-fit  mb-[24px] xl:mb-0">
+                    <img src="./img/Latest News 1.png" alt="">
+                    <div class="p-[24px]">
+                        <div class="inline sm:flex">
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M17.1583 11.6748L11.1833 17.6498C11.0285 17.8048 10.8447 17.9277 10.6424 18.0116C10.4401 18.0955 10.2232 18.1386 10.0042 18.1386C9.78513 18.1386 9.56825 18.0955 9.36592 18.0116C9.16359 17.9277 8.97978 17.8048 8.82499 17.6498L1.66666 10.4998V2.1665H9.99999L17.1583 9.32484C17.4687 9.63711 17.643 10.0595 17.643 10.4998C17.643 10.9401 17.4687 11.3626 17.1583 11.6748V11.6748Z" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.83331 6.33301H5.84165" stroke="#B3B3B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg></span>Food</p>
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M9.9999 9.66667C11.8408 9.66667 13.3332 8.17428 13.3332 6.33333C13.3332 4.49238 11.8408 3 9.9999 3C8.15895 3 6.66656 4.49238 6.66656 6.33333C6.66656 8.17428 8.15895 9.66667 9.9999 9.66667Z" stroke="#B3B3B3" stroke-width="1.2"/>
+                                <path d="M12.4999 12.1665H7.49995C5.19828 12.1665 3.13745 14.2915 4.65161 16.024C5.68161 17.2023 7.38495 17.9998 9.99995 17.9998C12.6149 17.9998 14.3174 17.2023 15.3474 16.024C16.8624 14.2907 14.8008 12.1665 12.4999 12.1665Z" stroke="#B3B3B3" stroke-width="1.2"/>
+                              </svg></span>By Admin</p>
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <path d="M10.5238 14.2728L9.48206 16.0087C9.43209 16.092 9.36139 16.1609 9.27687 16.2088C9.19234 16.2566 9.09686 16.2818 8.99972 16.2818C8.90258 16.2818 8.8071 16.2566 8.72257 16.2088C8.63804 16.1609 8.56735 16.092 8.51738 16.0087L7.47675 14.2728C7.42671 14.1895 7.35596 14.1206 7.27138 14.0728C7.1868 14.025 7.09128 13.9999 6.99413 14H2.8125C2.66332 14 2.52024 13.9407 2.41475 13.8352C2.30926 13.7298 2.25 13.5867 2.25 13.4375V4.4375C2.25 4.28832 2.30926 4.14524 2.41475 4.03975C2.52024 3.93426 2.66332 3.875 2.8125 3.875H15.1875C15.3367 3.875 15.4798 3.93426 15.5852 4.03975C15.6907 4.14524 15.75 4.28832 15.75 4.4375V13.4375C15.75 13.5867 15.6907 13.7298 15.5852 13.8352C15.4798 13.9407 15.3367 14 15.1875 14H11.0059C10.9088 14 10.8134 14.0252 10.7289 14.073C10.6445 14.1208 10.5738 14.1896 10.5238 14.2728V14.2728Z" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg></span>65 Comments</p>
+                        </div>
+                        <h5 class="text-[#2C742F] mt-[8px]">Eget lobortis lorem lacinia. Vivamus <br> pharetra semper,</h5>
+                        <button class="flex  items-center text-[#00B207] mt-[20px]">Read More <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                            <path d="M16 7.50049H1" stroke="#00B307" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.95001 1.47559L16 7.49959L9.95001 13.5246" stroke="#00B307" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></span></button>
+                    </div>
+                </div>
+                <div class="shadow-xl w-fit  mb-[24px] xl:mb-0">
+                    <img src="./img/Latest News 2.png" alt="">
+                    <div class="p-[24px]">
+                        <div class="inline sm:flex">
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M17.1583 11.6748L11.1833 17.6498C11.0285 17.8048 10.8447 17.9277 10.6424 18.0116C10.4401 18.0955 10.2232 18.1386 10.0042 18.1386C9.78513 18.1386 9.56825 18.0955 9.36592 18.0116C9.16359 17.9277 8.97978 17.8048 8.82499 17.6498L1.66666 10.4998V2.1665H9.99999L17.1583 9.32484C17.4687 9.63711 17.643 10.0595 17.643 10.4998C17.643 10.9401 17.4687 11.3626 17.1583 11.6748V11.6748Z" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.83331 6.33301H5.84165" stroke="#B3B3B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg></span>Food</p>
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M9.9999 9.66667C11.8408 9.66667 13.3332 8.17428 13.3332 6.33333C13.3332 4.49238 11.8408 3 9.9999 3C8.15895 3 6.66656 4.49238 6.66656 6.33333C6.66656 8.17428 8.15895 9.66667 9.9999 9.66667Z" stroke="#B3B3B3" stroke-width="1.2"/>
+                                <path d="M12.4999 12.1665H7.49995C5.19828 12.1665 3.13745 14.2915 4.65161 16.024C5.68161 17.2023 7.38495 17.9998 9.99995 17.9998C12.6149 17.9998 14.3174 17.2023 15.3474 16.024C16.8624 14.2907 14.8008 12.1665 12.4999 12.1665Z" stroke="#B3B3B3" stroke-width="1.2"/>
+                              </svg></span>By Admin</p>
+                            <p class="flex items-center text-[#4D4D4D] mr-[16px]"><span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <path d="M10.5238 14.2728L9.48206 16.0087C9.43209 16.092 9.36139 16.1609 9.27687 16.2088C9.19234 16.2566 9.09686 16.2818 8.99972 16.2818C8.90258 16.2818 8.8071 16.2566 8.72257 16.2088C8.63804 16.1609 8.56735 16.092 8.51738 16.0087L7.47675 14.2728C7.42671 14.1895 7.35596 14.1206 7.27138 14.0728C7.1868 14.025 7.09128 13.9999 6.99413 14H2.8125C2.66332 14 2.52024 13.9407 2.41475 13.8352C2.30926 13.7298 2.25 13.5867 2.25 13.4375V4.4375C2.25 4.28832 2.30926 4.14524 2.41475 4.03975C2.52024 3.93426 2.66332 3.875 2.8125 3.875H15.1875C15.3367 3.875 15.4798 3.93426 15.5852 4.03975C15.6907 4.14524 15.75 4.28832 15.75 4.4375V13.4375C15.75 13.5867 15.6907 13.7298 15.5852 13.8352C15.4798 13.9407 15.3367 14 15.1875 14H11.0059C10.9088 14 10.8134 14.0252 10.7289 14.073C10.6445 14.1208 10.5738 14.1896 10.5238 14.2728V14.2728Z" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg></span>65 Comments</p>
+                        </div>
+                        <h5 class="text-[#2C742F] mt-[8px]">Maecenas blandit risus elementum <br> mauris malesuada.</h5>
+                        <button class="flex  items-center text-[#00B207] mt-[20px]">Read More <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                            <path d="M16 7.50049H1" stroke="#00B307" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.95001 1.47559L16 7.49959L9.95001 13.5246" stroke="#00B307" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full bg-[#F2F2F2]">
+            <div class="max-w-[1320px] mx-auto m-2 md:m-5 lg:m-10 xl:m-15 px-[10px] sm:px-0">
+                <div class="flex justify-between pt-[60px]">
+                    <h3>Client Testimonials</h3>
+                    <div class="flex">
+                        <p class="w-[25px] sm:w-[30px] md:w-[35px] lg:w-[40px] xl:w-[45px] bg-white flex justify-center items-center rounded-full mr-[12px]"><span class=""><svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                            <path d="M1.25 7.22607H16.25" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.30005 1.20117L1.25005 7.22517L7.30005 13.2502" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></span></p>
+                        <p class="w-[25px] sm:w-[30px] md:w-[35px] lg:w-[40px] xl:w-[45px] bg-[#00B207] flex justify-center items-center rounded-full"><span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                            <path d="M15.75 7.22607H0.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.69995 1.20117L15.75 7.22517L9.69995 13.2502" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></span></p> 
+                    </div>    
+                </div>
+                <div class="w-full flex flex-wrap gap-x-6 justify-around xl:justify-normal mt-[32px]">
+                    <div class="p-[24px] bg-white w-fit rounded-lg  mb-[24px] xl:mb-0">
+                        <h4 class="mb-[16px]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="26" viewBox="0 0 32 26" fill="none">
+                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M23.8222 0C20.4357 0 17.6851 2.65696 17.6851 5.9336C17.6851 9.20821 20.4357 11.8672 23.8222 11.8672C29.6404 11.8672 26.2689 22.171 18.931 23.2443C18.5848 23.2936 18.2688 23.4578 18.0403 23.7071C17.8117 23.9563 17.6857 24.2742 17.6851 24.6032C17.6851 25.4456 18.487 26.1119 19.3751 25.9843C32.7122 24.0847 37.4546 0.00202497 23.8222 0.00202497V0ZM6.13933 0C2.74847 0 0 2.65493 0 5.9336C0 9.20619 2.74847 11.8631 6.13933 11.8631C11.9553 11.8631 8.58385 22.171 1.24597 23.2443C0.900119 23.2936 0.58443 23.4575 0.355931 23.7063C0.127431 23.9551 0.00118682 24.2725 0 24.6011C0 25.4436 0.801907 26.1098 1.68788 25.9823C15.0293 24.0827 19.7717 0 6.13933 0Z" fill="#00B307"/>
+                          </svg></h4>
+                        <p class="mb-[16px]">Pellentesque eu nibh eget mauris congue mattis <br> mattis nec tellus. Phasellus imperdiet elit eu magna <br> dictum, bibendum cursus velit sodales. Donec sed <br> neque eget</p>
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <img class="mr-[12px]" src="./img/rev1.png" alt="">
+                                <div>
+                                    <h6>Robert Fox</h6>
+                                    <p class="text-[#999999]">Customer</p>
+                                </div>
+                            </div>
+                            <div class="flex h-[40px] items-end">
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-[24px] bg-white w-fit rounded-lg  mb-[24px] xl:mb-0">
+                        <h4 class="mb-[16px]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="26" viewBox="0 0 32 26" fill="none">
+                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M23.8222 0C20.4357 0 17.6851 2.65696 17.6851 5.9336C17.6851 9.20821 20.4357 11.8672 23.8222 11.8672C29.6404 11.8672 26.2689 22.171 18.931 23.2443C18.5848 23.2936 18.2688 23.4578 18.0403 23.7071C17.8117 23.9563 17.6857 24.2742 17.6851 24.6032C17.6851 25.4456 18.487 26.1119 19.3751 25.9843C32.7122 24.0847 37.4546 0.00202497 23.8222 0.00202497V0ZM6.13933 0C2.74847 0 0 2.65493 0 5.9336C0 9.20619 2.74847 11.8631 6.13933 11.8631C11.9553 11.8631 8.58385 22.171 1.24597 23.2443C0.900119 23.2936 0.58443 23.4575 0.355931 23.7063C0.127431 23.9551 0.00118682 24.2725 0 24.6011C0 25.4436 0.801907 26.1098 1.68788 25.9823C15.0293 24.0827 19.7717 0 6.13933 0Z" fill="#00B307"/>
+                          </svg></h4>
+                        <p class="mb-[16px]">Pellentesque eu nibh eget mauris congue mattis <br> mattis nec tellus. Phasellus imperdiet elit eu magna <br> dictum, bibendum cursus velit sodales. Donec sed <br> neque eget</p>
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <img class="mr-[12px]" src="./img/rev2.png" alt="">
+                                <div>
+                                    <h6>Robert Fox</h6>
+                                    <p class="text-[#999999]">Customer</p>
+                                </div>
+                            </div>
+                            <div class="flex h-[40px] items-end">
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-[24px] bg-white w-fit rounded-lg  mb-[24px] xl:mb-0">
+                        <h4 class="mb-[16px]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="26" viewBox="0 0 32 26" fill="none">
+                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M23.8222 0C20.4357 0 17.6851 2.65696 17.6851 5.9336C17.6851 9.20821 20.4357 11.8672 23.8222 11.8672C29.6404 11.8672 26.2689 22.171 18.931 23.2443C18.5848 23.2936 18.2688 23.4578 18.0403 23.7071C17.8117 23.9563 17.6857 24.2742 17.6851 24.6032C17.6851 25.4456 18.487 26.1119 19.3751 25.9843C32.7122 24.0847 37.4546 0.00202497 23.8222 0.00202497V0ZM6.13933 0C2.74847 0 0 2.65493 0 5.9336C0 9.20619 2.74847 11.8631 6.13933 11.8631C11.9553 11.8631 8.58385 22.171 1.24597 23.2443C0.900119 23.2936 0.58443 23.4575 0.355931 23.7063C0.127431 23.9551 0.00118682 24.2725 0 24.6011C0 25.4436 0.801907 26.1098 1.68788 25.9823C15.0293 24.0827 19.7717 0 6.13933 0Z" fill="#00B307"/>
+                          </svg></h4>
+                        <p class="mb-[16px]">Pellentesque eu nibh eget mauris congue mattis <br> mattis nec tellus. Phasellus imperdiet elit eu magna <br> dictum, bibendum cursus velit sodales. Donec sed <br> neque eget</p>
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <img class="mr-[12px]" src="./img/rev3.png" alt="">
+                                <div>
+                                    <h6>Robert Fox</h6>
+                                    <p class="text-[#999999]">Customer</p>
+                                </div>
+                            </div>
+                            <div class="flex h-[40px] items-end">
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.3444 14.9012L14.285 17.3974C14.7887 17.7162 15.4137 17.2418 15.2644 16.6537L14.1262 12.1756C14.0941 12.0508 14.0978 11.9195 14.1369 11.7968C14.1761 11.6741 14.249 11.5649 14.3475 11.4818L17.8812 8.54118C18.345 8.15493 18.1062 7.38431 17.5094 7.34556L12.895 7.04556C12.7707 7.03675 12.6516 6.99283 12.5513 6.91891C12.4511 6.845 12.3739 6.74414 12.3287 6.62806L10.6075 2.29431C10.5606 2.17115 10.4774 2.06514 10.3689 1.99034C10.2604 1.91554 10.1318 1.87549 9.99998 1.87549C9.8682 1.87549 9.73953 1.91554 9.63104 1.99034C9.52254 2.06514 9.43935 2.17115 9.39248 2.29431L7.67123 6.62806C7.62617 6.74425 7.54902 6.84525 7.44877 6.91928C7.34852 6.99331 7.22929 7.03732 7.10498 7.04618L2.4906 7.34618C1.89436 7.38431 1.65436 8.15493 2.11873 8.54118L5.65248 11.4824C5.7508 11.5655 5.82371 11.6746 5.86284 11.7972C5.90198 11.9198 5.90575 12.0509 5.87373 12.1756L4.81873 16.3287C4.63935 17.0343 5.38998 17.6037 5.99373 17.2206L9.65623 14.9012C9.75917 14.8357 9.87862 14.801 10.0006 14.801C10.1226 14.801 10.242 14.8357 10.345 14.9012H10.3444Z" fill="#FF8A00"/>
+                                  </svg></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
