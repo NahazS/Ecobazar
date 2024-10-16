@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazer</title>
+    <link rel="stylesheet" href="src/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="font-Poppins">
+    <header>
+        <!------------------------ nav section  ---------------------------->
+        <nav class="mt-4 px-0 xl:px-16 mb-3">
+            <!------------------------ nav part1(address)  ---------------------------->
+            <div class="flex justify-between px-0 md:px-[50px] lg:px-[70px] xl:px-[120px] mb-3 ">
+                <div class="flex flex-row mx-auto md:mx-0">
+                    <img src="./img/Map Pin.svg" alt="">
+                    <p><span class="text-xs">Store Location: Lincoln- 344, Illinois, Chicago, USA</span></p>
+                </div>
+                <div class="hidden md:flex">
+                    <p><span class="text-xs mr-5">Eng</span></p>
+                    <p><span class="text-xs mr-5">USD</span></p>
+                    <p><span class="text-xs mr-5">Sign In / Sign Up</span></p>
+                </div>
+            </div>
+            <hr>
+            <!------------------------ nav part2(logo,search) ---------------------------->
+            <div class="flex justify-around sm:justify-between my-[24px]  px-3 md:px-[50px] lg:px-[70px] xl:px-[120px]">
+                <img onclick="window.location.href='index.html'" class="mr-[10px] md:mr-[30px] lg:mr-[70px] xl:mr-[120px] cursor-pointer" src="./img/Logo.png" alt="">
+                <div class="hidden sm:flex flex-1 items-center border-solid border-[1px] border-gray-300 rounded-md overflow-hidden">
+                    <input class="flex-1 px-2 py-2 text-gray-700 focus:outline-none" placeholder="Search"" type="text" name="" id="" required>
+                    <button class="bg-[#00B207] text-white px-4 py-2 font-semibold rounded-none hover:bg-opacity-50">Search</button>
+                </div>
+                <div class="flex items-center ml-3 md:ml-[30px] lg:ml-[70px] xl:ml-[120px]">
+                    <img class="h-[18px] md:h-[32px]" src="./img/Heart.svg" alt="">
+                    <div class="flex items-center">
+                        <img class="h-[18px] md:h-[32px]" src="./img/Bag.svg" alt="">
+                        <div>
+                            <p><span class="text-[11px]"><span class="hidden sm:inline">Shopping </span>cart:</span></p>
+                            <p>$00.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------ nav part3(home,shop etc.)  ---------------------------->
+            <div class="flex bg-[#333] justify-between py-4 px-0 md:px-[50px] lg:px-[70px] xl:px-[120px]">
+                <ul class="flex mx-auto md:mx-0">
+                    <li class="mr-4 md:mr-8 text-[#999]"><a href="index.html">Home</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999]"><a href="">Shop</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999]"><a href="">Pages</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999]"><a href="">Blog</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999] hidden sm:flex"><a href="">About Us</a></li>
+                    <li class="mr-4 md:mr-8 text-[#999] hidden sm:flex"><a href="">Contact Us</a></li>
+                </ul>
+                <div class="hidden md:flex items-center">
+                    <img src="./img/PhoneCall 1.svg" alt="">
+                    <p class="text-white">(219) 555-0114</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="px-0 xl:px-16">
+            <img class="w-full" src="./img/select_section/select_section_banner.png" alt="">
+        </div>
+        <section  class="flex flex-col lg:flex-row items-center justify-center mt-10  p-2 md:p-5 lg:p-10 xl:p-15">
+            <!----------------------- product show by js -------------->
+            <div id="show_product" class="flex w-fit items-center">
+                
+            </div>
+            <!---------------------- product details  ------------------------>
+            <div class="max-w-[98%] sm:max-w-[98%] md:max-w-[648px] lg:mt-[24px] ">
+                <div class="flex items-center mb-3">
+                    <h2 id="product_name" class="font-semibold">- - - - - -</h2>
+                    <p class="py-1 px-2 bg-[#20B526] bg-opacity-20 w-fit h-fit rounded text-[#2C742F] ml-2">In Stock</p>
+                </div>
+                <div class="flex items-center mb-5">
+                    <img src="img/Star_full.svg" alt="">
+                    <img src="img/Star_full.svg" alt="">
+                    <img src="img/Star_full.svg" alt="">
+                    <img src="img/Star_full.svg" alt="">
+                    <img src="img/Star_full.svg" alt="">
+                    <p class="text-[#666] mr-[31px]"> 5 Review</p>
+                    <p>SKU: <span class="ml-1 text-[#666]">2,51,594</span></p>
+                </div>
+                <div class="flex items-center mb-5">
+                    <h5 class="text-[#B3B3B3]">$48.00</h5>
+                    <h4 id="product_price" class="ml-[4px] text-[#2C742F] font-medium">$00.00</h4>
+                    <p class="ml-[12px] text-[#EA4B48] py-1 px-2 bg-[#ea4b48] w-fit h-fit bg-opacity-10 rounded-[30px]">64% Off</p>
+                </div>
+                <hr>
+                <div class="flex justify-between mt-6">
+                    <div class="flex items-center">
+                        <p class="mr-2">Brand:</p>
+                        <img class="w-[56px]" src="img/Brand.png" alt="">
+                    </div>
+                    <div class="flex items-center">
+                        <p class="mr-1 sm:mr-[10px]">Share item:</p>
+                        <p class="w-[40px] mr-[16px]"><img src="./img/media/fb.png" alt=""></p>
+                        <img class="mr-[16px]" src="./img/media/twitter 1.svg" alt="">
+                        <img class="mr-[16px]" src="./img/media/pinterest 1.svg" alt="">
+                        <img src="./img/media/pinterest 1.svg" alt="">
+                    </div>
+                </div>
+                <p class="text-[#808080] mt-[16px] mb-[24px]">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos <br> himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla <br> varius magna a consequat pulvinar. </p>
+                <hr>
+                <div class="flex justify-between mt-4 mb-4">
+                    <div class="flex p-2 w-fit border-[1px] border-[#E6E6E6] rounded-[170px] items-center">
+                        <span class="w-[34px] mr-2 sm:mr-[20px]"><img src="img/Plus.png" alt=""></span> 
+                        <p>1</p>
+                        <span class="ml-2 sm:ml-[20px] w-[34px]"><img src="img/Minus.png" alt=""></span>
+                    </div>
+                    <button class="flex items-center justify-center w-[447px] bg-[#00B207] text-white py-4 px-3 sm:px-10 rounded-[43px]">Add to Cart <span class="ml-4"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M5.66667 7.33333H3.16667L1.5 16.5H16.5L14.8333 7.33333H12.3333M5.66667 7.33333V4.83333C5.66667 2.99239 7.15905 1.5 9 1.5V1.5C10.8409 1.5 12.3333 2.99238 12.3333 4.83333V7.33333M5.66667 7.33333H12.3333M5.66667 7.33333V9.83333M12.3333 7.33333V9.83333" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></span></button>
+                    <img class="hidden sm:inline p-4 bg-[#20b526] bg-opacity-10 rounded-[43px]" src="img/Heart.svg" alt="">
+                </div>
+                <hr>
+                <div class="mt-4">
+                    <p class="mb-3">Category: <span class="text-[#808080]">Vegetables</span></p>
+                    <p>Tag: <span class="text-[#808080]">Vegetables Healthy Chinese Cabbage Green Cabbage</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

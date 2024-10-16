@@ -26,10 +26,17 @@ p{
 .btn-primary{
     @apply text-[#00B207] bg-white rounded-[53px] px-[40px] py-[16px] max-w-max;
 }
+.small_btn{
+    @apply w-[40px] h-[40px] flex items-center justify-center rounded-[20px]  bg-white shadow-lg hover:shadow-xl   active:shadow-inner;
+}
 .popular_box
 {
     @apply border-solid border-[1px] border-[#E6E6E6] hover:border-[#2C742F] rounded-md mb-[24px] text-center w-fit;
 }
 .pop_product_box{
-    @apply border-[1px] border-[#E6E6E6] hover:border-[#2C742F] max-w-[264px] mx-auto sm:mx-0 bg-white ;
+    @apply border-[1px] border-[#E6E6E6] hover:border-[#2C742F] mx-auto sm:mx-0 bg-white shadow-sm  hover:shadow-md ;
+}
+/* select_product.html */
+.smallImg{
+    @apply h-[90px] w-[80px] bg-[#F2F2F2] mb-[10px] block cursor-pointer opacity-60 hover:opacity-100;
 }
