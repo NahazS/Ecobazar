@@ -178,9 +178,15 @@ popular_categories.innerHTML = Popular.map(addPopular).join('');
 
 function addProduct(product)
 {
+    let extra_style = "";
+
+    if(product.id == 1)
+        extra_style = "col-span-2 row-span-2 sm:col-span-2 sm:row-span-2 place-content-center mx-auto sm:mx-0 w-full";
+    else
+        extra_style = "max-w-[264px]";
     const star = star_full.repeat(product.rating) + star_empty.repeat(5 - product.rating );
     return `
-        <div class="pop_product_box relative group">
+        <div class="pop_product_box relative group ${extra_style}">
             <div class="absolute top-0 right-2 opacity-0 transform -translate-x-52 transition-all  group-hover:translate-x-0 group-hover:opacity-100">
                 <div>
                     <button onclick="addToArray('${product.id}')" class="small_btn mb-2"><img src="./img/Heart 2.svg" alt=""></button>
@@ -214,35 +220,9 @@ const featured_products = document.querySelector('#featured_products');
 featured_products.innerHTML = featuredProducts.map(addProduct).join('');
 
 
-function hotProduct(product , index=0)
-{
-    let extra_style = "";
-
-    if(index === 0)
-        extra_style = "col-span-2 row-span-2 sm:col-span-2 sm:row-span-2 place-content-center mx-auto sm:mx-0 w-full";
-    else
-        extra_style = "max-w-[264px]";
-    const star = star_full.repeat(product.rating) + star_empty.repeat(5 - product.rating );
-    return `
-        <div onclick="idstorage(${product.id})" class="pop_product_box ${extra_style}">
-            <img class="p-[5px]" src="${product.image}" alt="">
-            <div class="p-[12px]">
-                <p>${product.name}</p>
-                <div class="flex justify-between items-center">
-                    <h6>${product.price}</h6>
-                    <img class="bg-[#CCCCCC] rounded-full hover:bg-[#00B207] p-1" src="img/Bag.svg" alt="">
-                </div>
-                <div class="flex">
-                    ${star}
-                </div>
-            </div>    
-        </div>
-    `;
-
-}
 //<!------------------------ Hot Deals  ---------------------------->
 const hot_product = document.querySelector('#hot_product');
-hot_product.innerHTML = Product.map(hotProduct).join('');
+hot_product.innerHTML = Product.map(addProduct).join('');
 
 function modal(id)
 {
